@@ -53,13 +53,13 @@ export default async function Home() {
             <p className="text-lg leading-relaxed text-gray-100">
               {memory.excerpt}
             </p>
-            <Link
+            {/* <Link
               href={`/memories/${memory.id}`}
               className="flex items-center gap-2 text-sm text-gray-200 hover:text-gray-100"
             >
               Ler mais
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </Link> */}
           </div>
         )
       })}
