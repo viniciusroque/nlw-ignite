@@ -50,7 +50,7 @@
     npm i
     ```
 3. Copy the `.env.template` to `.env` running the following command:
-   ```shell
+   ```shellb
    cp .env.template .env
    ```
 4. Replace <public Github client_id> to your Public Github Client ID
@@ -66,7 +66,12 @@
     ```shell
     npm i
     ```
-3. To start the application there are some options:
+3. Copy the `.env.template` to `.env` running the following command:
+   ```shell
+   cp .env.template .env
+   ```
+4. Replace <public Github client_id> to your Public Github Client ID
+5. To start the application there are some options:
 
     1. Choosing the simulator running the following command:
     ```shell
