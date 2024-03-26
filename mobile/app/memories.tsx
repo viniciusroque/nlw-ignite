@@ -91,14 +91,14 @@ export default function Memories() {
                   {memory.excerpt}
                 </Text>
 
-                <Link href="/memories/id" asChild>
+                {/* <Link href="/memories/id" asChild>
                   <TouchableOpacity className="flex-row items-center gap-2">
                     <Text className="font-body text-sm text-gray-200">
                       Ler mais
                     </Text>
                     <Icon name="arrow-right" size={16} color="#9e9ea0" />
                   </TouchableOpacity>
-                </Link>
+                </Link> */}
               </View>
             </View>
           )
