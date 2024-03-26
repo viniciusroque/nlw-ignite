@@ -36,6 +36,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^20.11.30",
     "eslint": "^8.40.0",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "react-native-svg-transformer": "^1.0.0",

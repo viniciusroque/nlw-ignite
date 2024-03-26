@@ -1,4 +1,3 @@
-import { PUBLIC_GITHUB_CLIENT_ID } from '@env'
 import { useEffect } from 'react'
 import { useRouter } from 'expo-router'
 import { View, Text, TouchableOpacity } from 'react-native'
@@ -8,6 +7,7 @@ import * as SecureStore from 'expo-secure-store'
 import NLWLogo from '../src/assets/nlw-spacetime-logo.svg'
 import { api } from '../src/lib/api'
 
+const PUBLIC_GITHUB_CLIENT_ID = process.env.PUBLIC_GITHUB_CLIENT_ID
 const discovery = {
   authorizationEndpoint: 'https://github.com/login/oauth/authorize',
   tokenEndpoint: 'https://github.com/login/oauth/access_token',
@@ -31,6 +31,9 @@ export default function App() {
   async function handleGithubOAuthCode(code: string) {
     const response = await api.post('register', {
       code,
+      Headers: {
+        'Content-Type': 'application/json',
+      },
     })
     const { token } = response.data
 
