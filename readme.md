@@ -33,7 +33,11 @@
    ```
 4. Replace <Github client_id> to your Github Client ID
 5. Replace <Github client_secret> to your Github Secret
-6. Start the server running the following command:
+6. Create a database using the following command:
+    ```shell
+    npm run prisma:db
+    ```
+7. Start the server running the following command:
     ```shell
     npm run dev
     ```
