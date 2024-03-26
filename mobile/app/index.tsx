@@ -1,3 +1,4 @@
+import { PUBLIC_GITHUB_CLIENT_ID } from '@env'
 import { useEffect } from 'react'
 import { useRouter } from 'expo-router'
 import { View, Text, TouchableOpacity } from 'react-native'
@@ -10,8 +11,7 @@ import { api } from '../src/lib/api'
 const discovery = {
   authorizationEndpoint: 'https://github.com/login/oauth/authorize',
   tokenEndpoint: 'https://github.com/login/oauth/access_token',
-  revocationEndpoint:
-    'https://github.com/settings/connections/applications/353f10dbf15c5f091325',
+  revocationEndpoint: `https://github.com/settings/connections/applications/${PUBLIC_GITHUB_CLIENT_ID}`,
 }
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
 
   const [, response, signInWithGithub] = useAuthRequest(
     {
-      clientId: '353f10dbf15c5f091325',
+      clientId: PUBLIC_GITHUB_CLIENT_ID,
       scopes: ['identity'],
       redirectUri: makeRedirectUri({
         scheme: 'nlwspacetime',
