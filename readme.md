@@ -33,6 +33,8 @@
    ```
 4. Replace <Github client_id> to your Github Client ID
 5. Replace <Github client_secret> to your Github Secret
+4. Replace <Github mobile client_id> to your Github Client ID
+5. Replace <Github mobile client_secret> to your Github Secret
 6. Create a database using the following command:
     ```shell
     npm run prisma:db
