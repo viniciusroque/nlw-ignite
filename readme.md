@@ -57,7 +57,7 @@
 
 #### Mobile Application
 
-1. Navigate to the `moblie` directory
+1. Navigate to the `mobile` directory
 2. Install the mobile dependencies by running the following command:
     ```shell
     npm i
